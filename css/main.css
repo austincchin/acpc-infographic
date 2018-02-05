@@ -1,0 +1,31 @@
+:root{
+	--cool: #006ebb;
+	--cute: #ef4d78;
+	--natural: #ce9902;
+	--rustic: #6b8a00;
+	--sporty: #00764e;
+	--hip: #e87000;
+}
+
+body {
+	font-family: "Cabin";
+	background: url("../img/ac_pattern03.png");
+}
+
+h1 {
+	font-family: "Bree Serif";
+}
+
+table {
+	background: #fff;
+	border-radius: 10px;
+}
+
+.jumbotron {
+	background: #358f81;
+}
+
+#title {
+	color: #fdca31;
+	text-shadow: 3px 3px #72540e;
+}
