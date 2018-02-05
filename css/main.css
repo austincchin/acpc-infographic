@@ -40,6 +40,7 @@ table {
 	text-align: center;
 	vertical-align: middle !important;
 	font-weight: 700;
+	background-color: rgba(255,255,255,.2);
 
 }
 
@@ -47,8 +48,32 @@ td{
 	border-right: 1px solid #ddd;
 }
 
-.table-hover tbody tr:hover td, .table-hover tbody tr:hover th {
-  background-color: rgba(0, 122, 107, .3);
+.table-hover tbody tr:hover .cellCool  {
+  background-color: rgba(0, 110, 187, .4);
+}
+
+.table-hover tbody tr:hover .cellCute  {
+  background-color: rgba(239, 77, 120, .4);
+}
+
+.table-hover tbody tr:hover .cellHip  {
+  background-color: rgba(232, 112, 0, .4);
+}
+
+.table-hover tbody tr:hover .cellNatural  {
+  background-color: rgba(206, 153, 2, .4);
+}
+
+.table-hover tbody tr:hover .cellRustic  {
+  background-color: rgba(107, 138, 0, .4);
+}
+
+.table-hover tbody tr:hover .cellSporty  {
+  background-color: rgba(0, 118, 78, .4);
+}
+
+.table-hover tbody tr:hover th {
+	background-color: rgba(255,255,255,.4);
 }
 
 
