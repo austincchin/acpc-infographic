@@ -1,6 +1,34 @@
 app.controller('MainController', 
 	['$scope', function($scope) { 
 
+		$scope.statisticsEss = {
+			hip: '6',
+			cute: '13',
+			natural: '11',
+			sporty: '12',
+			rustic: '8',
+			cool: '11'
+		};
+
+		$scope.statisticsMat = {
+			Steel: '20',
+			Preserves: '3',
+			Paper: '7',
+			Wood: '23',
+			Cotton: '8'
+		};
+
+		$scope.statisticsPer = {
+			lazy: '11',
+			normal: '12',
+			snooty: '3',
+			peppy: '10',
+			cranky: '7',
+			smug: '4',
+			uchi: '4',
+			jock: '10'
+		};
+
 		$scope.coolCotton = [
 		{
 			name: 'Agnes',

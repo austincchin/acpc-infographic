@@ -36,7 +36,7 @@
 		
 		<div class="main" ng-controller="MainController">
 
-						<div class="container">
+			<div class="container">
 				<table class="table table-hover">
 					<caption><h1>Villager Essences & Primary Resources</h2></caption>
 					<thead><tr>
@@ -131,6 +131,26 @@
 								<villager v="a"></villager></div></td>	
 						</tr></tbody>
 				</table>
+
+				<div class="container">
+					<h1 style="text-align: center;">Statistics Corner</h1>
+					<div class="container col-md-5" style="text-align:center;">
+						<h4>{{ statisticsPer.cranky }} villagers are Cranky ♂</h4>
+						<h4>{{ statisticsPer.jock }} villagers are Jocks ♂</h4>
+						<h4>{{ statisticsPer.lazy }} villagers are Lazy ♂</h4>
+						<h4>{{ statisticsPer.smug }} villagers are Smug ♂</h4>
+					</div>	
+
+					<div class=" container col-md-5" style="text-align:center;">
+						<h4>{{ statisticsPer.normal }} villagers are Normal ♀</h4>
+						<h4>{{ statisticsPer.peppy }} villagers are Peppy ♀</h4>
+						<h4>{{ statisticsPer.snooty }} villagers are Snooty ♀</h4>
+						<h4>{{ statisticsPer.uchi }} villagers are Uchi ♀</h4>
+					</div>	
+
+					</div>
+				</div>
+
 			</div>
 
 

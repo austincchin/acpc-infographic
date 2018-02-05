@@ -1,0 +1,28 @@
+$scope.statisticsEss = {
+	hip: '6',
+	cute: '13',
+	natural: '11',
+	sporty: '12',
+	rustic: '8',
+	cool: '11'
+};
+
+$scope.statisticsMat = {
+	Steel: '20',
+	Preserves: '3',
+	Paper: '7',
+	Wood: '23',
+	Cotton: '8'
+};
+
+$scope.statisticsPer = {
+	Lazy: '11',
+	Normal: '12',
+	Snooty: '3',
+	Peppy: '10',
+	Cranky: '7',
+	Smug: '4',
+	Uchi: '4',
+	Jock: '10'
+};
+
