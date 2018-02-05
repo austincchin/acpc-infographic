@@ -16,16 +16,141 @@ h1 {
 	font-family: "Bree Serif";
 }
 
-table {
-	background: #fff;
-	border-radius: 10px;
-}
-
 .jumbotron {
-	background: #358f81;
+	background: linear-gradient(rgba(53, 143, 129, 1),rgba(53, 143, 129, 0));
 }
 
 #title {
 	color: #fdca31;
 	text-shadow: 3px 3px #72540e;
+}
+
+
+table {
+	background: rgba(255,255,255,.6);
+	border-radius: 10px;
+}
+
+
+/* ===================================
+        icons for essence row
+=====================================
+.essence {
+	border: 4px solid transparent;
+	border-radius: 10px;
+
+}*/
+
+.mat {
+	text-align: center;
+	vertical-align: bottom;
+	font-weight: 700;
+
+
+}
+
+#cool::before {
+	content: "";
+	display: block;
+	background: url("../img/essence/coolIcon.png");
+	width: 20px;
+	height: 20px;
+	float: left;
+	margin: 0 8px 0 0;
+}
+
+#cute::before {
+	content: "";
+	display: block;
+	background: url("../img/essence/cuteIcon.png");
+	width: 20px;
+	height: 20px;
+	float: left;
+	margin: 0 8px 0 0;
+}
+
+#hip::before {
+	content: "";
+	display: block;
+	background: url("../img/essence/hipIcon.png");
+	width: 20px;
+	height: 20px;
+	float: left;
+	margin: 0 8px 0 0;
+}
+
+#natural::before {
+	content: "";
+	display: block;
+	background: url("../img/essence/naturalIcon.png");
+	width: 20px;
+	height: 20px;
+	float: left;
+	margin: 0 8px 0 0;
+}
+
+#rustic::before {
+	content: "";
+	display: block;
+	background: url("../img/essence/rusticIcon.png");
+	width: 20px;
+	height: 20px;
+	float: left;
+	margin: 0 8px 0 0;
+}
+
+#sporty::before {
+	content: "";
+	display: block;
+	background: url("../img/essence/sportyIcon.png");
+	width: 20px;
+	height: 20px;
+	float: left;
+	margin: 0 8px 0 0;
+}
+
+/*==================
+villager tooltip
+===================*/
+
+/*
+.villager{
+	position: relative;
+	display: inline-block;
+}
+
+.tooltip{
+	visibility: hidden;
+	color: #fff;
+	text-align: center;
+	border-radius: 5px;
+	padding: 2px;
+	background: #131313;
+
+	position:absolute;
+	z-index: 1;
+	width: 70px;
+	top: 110%;
+	left: 50%;
+	margin-left:-35px;
+	opacity: 0;
+	transition: .3s ease;
+	
+}
+
+.villager:hover .tooltip{
+	visibility: visible;
+	opacity: 1;
+	transition: .3s ease;
+}
+
+.villager .tooltip::after{
+	content: " ";
+	position: absolute;
+	bottom: 100%;
+	left: 50%;
+	margin-left: -5px;
+	border-width: 5px;
+	border-style: solid;
+	border-color: transparent transparent black transparent;*/
 }

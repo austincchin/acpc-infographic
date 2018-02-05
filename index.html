@@ -5,6 +5,10 @@
 		<!-- Bootstrap; ensure proper rendering & touch zooming-->
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<link href="https://s3.amazonaws.com/codecademy-content/projects/bootstrap.min.css" rel="stylesheet" />
+
+		<!-- jQuery import -->
+		<script src="http://www.google.com/jsapi" type="text/javascript"></script>
+		<script type="text/javascript">google.load("jquery", "1.3.2");</script>
 		<!-- CSS & Google Fonts Import-->
 		
 		<link href="https://fonts.googleapis.com/css?family=Bree+Serif|Cabin:400,700" rel="stylesheet"/>
@@ -21,11 +25,19 @@
 			.sporty{ background: var(--sporty); color: #fff; }
 			.hip{ background: var(--hip);color: #fff; }
 		</style>
+
+		<!-- tooltip jQuery initialization-->
+		<script>
+			$(document).ready(function(){
+			    $('[data-toggle="tooltip"]').tooltip(); 
+			});
+		</script>
+
 	</head>
 	<body ng-app="acTable">
 		<header class="jumbotron">
 			<h1 id = "title">Animal Crossing: Pocket Camp</h1>
-			<h2>live infographic</h2>
+			<h3>live infographic</h3>
 		</header>
 		
 		<div class="main" ng-controller="MainController">
@@ -33,25 +45,25 @@
 						<div class="container">
 				<table class="table">
 					<thead><tr>
-						<th></th>
-						<th class="cool">cool</th>
-						<th class="cute">cute</th>
-						<th class="hip">hip</th>
-						<th class="natural">natural</th>
-						<th class="rustic">rustic</th>
-						<th class="sporty">sporty</th>
+						<th style=""></th>
+						<th class="essence cool" id="cool">cool</th>
+						<th class="essence cute" id="cute">cute</th>
+						<th class="essence hip" id="hip">hip</th>
+						<th class="essence natural" id="natural">natural</th>
+						<th class="essence rustic" id="rustic">rustic</th>
+						<th class="essence sporty" id="sporty" style="border-top-right-radius: 10px;">sporty</th>
 					</tr></thead>
 					<tbody>
 						<tr>
-							<td id = "cotton"><img src="img/building/cotton.png">cotton</td>
-							<td>cotton / cool</td>
+							<td class = "mat">cotton</td>
+							<td><div class="villager" ng-repeat="a in animals"><a href="#" data-toggle="tooltip" data-placement="bottom" title="{{ a.name }}"><img ng-src="{{ a.img }}" style="width:35px;float:left;padding:2px;"></a></div></td>
 							<td>cotton / cute</td>
 							<td>cotton / hip</td>
 							<td>cotton / rustic</td>
 							<td>cotton / sporty</td>
 							<td>cotton / hip</td>
 						</tr><tr>
-							<td id = "paper">paper</td>
+							<td class = "mat">paper</td>
 							<td>paper / cool</td>
 							<td>paper / cute</td>
 							<td>paper / hip</td>
@@ -59,7 +71,7 @@
 							<td>paper / sporty</td>
 							<td>paper / hip</td>
 						</tr><tr>
-							<td id = "preserves">preserves</td>
+							<td class = "mat">preserves</td>
 							<td>preserves / cool</td>
 							<td>preserves / cute</td>
 							<td>preserves / hip</td>
@@ -67,7 +79,7 @@
 							<td>preserves / sporty</td>
 							<td>preserves / hip</td>
 						</tr><tr>
-							<td id = "steel">steel</td>
+							<td class = "mat">steel</td>
 							<td>steel / cool</td>
 							<td>steel / cute</td>
 							<td>steel / hip</td>
@@ -75,7 +87,7 @@
 							<td>steel / sporty</td>
 							<td>steel / hip</td>
 						</tr><tr>
-							<td id = "wood">wood</td>
+							<td class = "mat">wood</td>
 							<td>wood / cool</td>
 							<td>wood / cute</td>
 							<td>wood / hip</td>
@@ -88,7 +100,7 @@
 
 			<div ng-repeat="v in animals" class="col-sm-2">
 				<div class="thumbnail {{ v.essence }}">
-					<img ng-src="{{ v.img }}" style="width:30px;">
+					<img ng-src="{{ v.img }}" style="width:40px;">
 					<p> {{ v.name }} </p>
 					<p> {{ v.species }}, {{ v.personality }} </p>
 					<p> {{ v.material }}, {{ v.essence }} </p>
