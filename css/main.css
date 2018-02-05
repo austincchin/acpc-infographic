@@ -12,12 +12,17 @@ body {
 	background: url("../img/ac_pattern03.png");
 }
 
-h1 {
+h1, .jumbotron h3 {
 	font-family: "Bree Serif";
 }
 
+.jumbotron h3 {
+	color: #fff;
+}
+
 .jumbotron {
-	background: linear-gradient(rgba(53, 143, 129, 1),rgba(53, 143, 129, 0));
+	background: linear-gradient(rgba(53, 143, 129, 1),rgba(53, 143, 129, .3));
+	text-align: center;
 }
 
 #title {
