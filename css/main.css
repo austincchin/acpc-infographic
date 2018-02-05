@@ -9,7 +9,7 @@
 
 body {
 	font-family: "Cabin";
-	background: url("../img/ac_pattern03.png");
+	background: url("../img/ac_pattern05.png");
 }
 
 h1, .jumbotron h3 {
@@ -21,13 +21,19 @@ h1, .jumbotron h3 {
 }
 
 .jumbotron {
-	background: linear-gradient(rgba(53, 143, 129, 1),rgba(53, 143, 129, .3));
+	background: linear-gradient(rgba(53, 143, 129, 1),rgba(53, 143, 129, 0));
 	text-align: center;
 }
 
 #title {
 	color: #fdca31;
 	text-shadow: 3px 3px #72540e;
+}
+
+.table-container {
+	background: #95c2ad;
+	border-radius: 40px;
+	min-width:80%;
 }
 
 
