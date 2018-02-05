@@ -16,10 +16,11 @@ def writeDic(d,fname):
 	f.close()
 
 
-if __name__ == "__main__":
+def run():
 	#open csv file
 	#sort into essence/material groupings
 	#create files based on essence/material groups 
+	print "Now running csvCreator.py"
 	inputFilename = '../data/animalInfo.csv'
 	inputFile = open(inputFilename, "r") 
 	header = inputFile.readline()

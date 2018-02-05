@@ -1,7 +1,8 @@
 #this is in place until i convert all CSVs to JSON and then use the codecademy services method
 import os
 
-if __name__ == "__main__":
+def run():
+	print "Now running MCplaceholder.py"
 	w = open('ControllerOutput.txt','w')
 	directory = "../data/parsedCSV"
 	for r, d, fnames in os.walk(directory):
