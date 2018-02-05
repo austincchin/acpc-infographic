@@ -26,12 +26,6 @@
 			.hip{ background: var(--hip);color: #fff; }
 		</style>
 
-		<!-- tooltip jQuery initialization-->
-		<script>
-			$(document).ready(function(){
-			    $('[data-toggle="tooltip"]').tooltip(); 
-			});
-		</script>
 
 	</head>
 	<body ng-app="acTable">
@@ -43,7 +37,7 @@
 		<div class="main" ng-controller="MainController">
 
 						<div class="container">
-				<table class="table">
+				<table class="table table-bordered table-hover">
 					<thead><tr>
 						<th style=""></th>
 						<th class="essence cool" id="cool">cool</th>
@@ -55,45 +49,85 @@
 					</tr></thead>
 					<tbody>
 						<tr>
-							<td class = "mat">cotton</td>
-							<td><div class="villager" ng-repeat="a in animals"><a href="#" data-toggle="tooltip" data-placement="bottom" title="{{ a.name }}"><img ng-src="{{ a.img }}" style="width:35px;float:left;padding:2px;"></a></div></td>
-							<td>cotton / cute</td>
-							<td>cotton / hip</td>
-							<td>cotton / natural</td>
-							<td>cotton / rustic</td>
-							<td>cotton / sporty</td>
+							<td class="mat">
+								<img src="img/materials/cotton.png" style="height: 40px;">
+								</br>cotton</td>
+								<td><div class="villager" ng-repeat="a in coolCotton">
+								<villager v="a"></villager></div></td>
+								<td><div class="villager" ng-repeat="a in cuteCotton">
+								<villager v="a"></villager></div></td>
+								<td><div class="villager" ng-repeat="a in hipCotton">
+								<villager v="a"></villager></div></td>
+								<td><div class="villager" ng-repeat="a in naturalCotton">
+								<villager v="a"></villager></div></td>
+								<td><div class="villager" ng-repeat="a in rusticCotton">
+								<villager v="a"></villager></div></td>
+								<td><div class="villager" ng-repeat="a in sportyCotton">
+								<villager v="a"></villager></div></td>
 						</tr><tr>
-							<td class = "mat">paper</td>
-							<td>paper / cool</td>
-							<td>paper / cute</td>
-							<td>paper / hip</td>
-							<td>paper / natural</td>
-							<td>paper / rustic</td>
-							<td>paper / sporty</td>
+							<td class="mat">
+								<img src="img/materials/paper.png" style="height: 40px;">
+								</br>paper</td>
+								<td><div class="villager" ng-repeat="a in coolPaper">
+								<villager v="a"></villager></div></td>
+								<td><div class="villager" ng-repeat="a in cutePaper">
+								<villager v="a"></villager></div></td>
+								<td><div class="villager" ng-repeat="a in hipPaper">
+								<villager v="a"></villager></div></td>
+								<td><div class="villager" ng-repeat="a in naturalPaper">
+								<villager v="a"></villager></div></td>
+								<td><div class="villager" ng-repeat="a in rusticPaper">
+								<villager v="a"></villager></div></td>
+								<td><div class="villager" ng-repeat="a in sportyPaper">
+								<villager v="a"></villager></div></td>
 						</tr><tr>
-							<td class = "mat">preserves</td>
-							<td>preserves / cool</td>
-							<td>preserves / cute</td>
-							<td>preserves / hip</td>
-							<td>preserves / natural</td>
-							<td>preserves / rustic</td>
-							<td>preserves / sporty</td>
+							<td class="mat">
+								<img src="img/materials/preserves.png" style="height: 40px;">
+								</br>preserves</td></td>
+								<td><div class="villager" ng-repeat="a in coolPreserves">
+								<villager v="a"></villager></div></td>
+								<td><div class="villager" ng-repeat="a in cutePreserves">
+								<villager v="a"></villager></div></td>
+								<td><div class="villager" ng-repeat="a in hipPreserves">
+								<villager v="a"></villager></div></td>
+								<td><div class="villager" ng-repeat="a in naturalPreserves">
+								<villager v="a"></villager></div></td>
+								<td><div class="villager" ng-repeat="a in rusticPreserves">
+								<villager v="a"></villager></div></td>
+								<td><div class="villager" ng-repeat="a in sportyPreserves">
+								<villager v="a"></villager></div></td>
 						</tr><tr>
-							<td class = "mat">steel</td>
-							<td>steel / cool</td>
-							<td>steel / cute</td>
-							<td>steel / hip</td>
-							<td>steel / natural</td>
-							<td>steel / rustic</td>
-							<td>steel / sporty</td>
+							<td class="mat">
+							<img src="img/materials/steel.png" style="height: 40px;">
+								</br>steel</td></td>
+								<td><div class="villager" ng-repeat="a in coolSteel">
+								<villager v="a"></villager></div></td>
+								<td><div class="villager" ng-repeat="a in cuteSteel">
+								<villager v="a"></villager></div></td>
+								<td><div class="villager" ng-repeat="a in hipSteel">
+								<villager v="a"></villager></div></td>
+								<td><div class="villager" ng-repeat="a in naturalSteel">
+								<villager v="a"></villager></div></td>
+								<td><div class="villager" ng-repeat="a in rusticSteel">
+								<villager v="a"></villager></div></td>
+								<td><div class="villager" ng-repeat="a in sportySteel">
+								<villager v="a"></villager></div></td>
 						</tr><tr>
-							<td class = "mat">wood</td>
-							<td>wood / cool</td>
-							<td>wood / cute</td>
-							<td>wood / hip</td>
-							<td>wood / natural</td>	
-							<td>wood / rustic</td>	
-							<td>wood / sporty</td>			
+							<td class="mat">
+							<img src="img/materials/wood.png" style="height: 40px;">
+								</br>wood</td></td>
+								<td><div class="villager" ng-repeat="a in coolWood">
+								<villager v="a"></villager></div></td>
+								<td><div class="villager" ng-repeat="a in cuteWood">
+								<villager v="a"></villager></div></td>
+								<td><div class="villager" ng-repeat="a in hipWood">
+								<villager v="a"></villager></div></td>
+								<td><div class="villager" ng-repeat="a in naturalWood">
+								<villager v="a"></villager></div></td>
+								<td><div class="villager" ng-repeat="a in rusticWood">
+								<villager v="a"></villager></div></td>
+								<td><div class="villager" ng-repeat="a in sportyWood">
+								<villager v="a"></villager></div></td>	
 						</tr></tbody>
 				</table>
 			</div>
@@ -110,5 +144,6 @@
 		<script src="js/controllers/MainController.js"></script>
 		<!-- Services -->
 		<!-- Directives -->
+		<script src="js/directives/villager.js"></script>
 	</body>
 </html>

@@ -39,7 +39,7 @@ if __name__ == "__main__":
 		personality = j[1]
 		essence = j[4].strip()
 		material = j[3].strip().capitalize()
-		outFile = "../data/" + essence + material + ".csv"
+		outFile = "../data/parsedCSV/" + essence + material + ".csv"
 
 		output = None
 		if outFile in outputNames: #if it has already been opened
