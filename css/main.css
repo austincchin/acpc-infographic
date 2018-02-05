@@ -32,8 +32,23 @@ h1, .jumbotron h3 {
 
 
 table {
-	background: rgba(255,255,255,.6);
+	background: rgba(255,255,255,.4);
 	border-radius: 10px;
+}
+
+.mat {
+	text-align: center;
+	vertical-align: middle !important;
+	font-weight: 700;
+
+}
+
+td{
+	border-right: 1px solid #ddd;
+}
+
+.table-hover tbody tr:hover td, .table-hover tbody tr:hover th {
+  background-color: rgba(0, 122, 107, .3);
 }
 
 
@@ -46,12 +61,6 @@ table {
 
 }*/
 
-.mat {
-	text-align: center;
-	vertical-align: middle;
-	font-weight: 700;
-
-}
 
 #cool::before {
 	content: "";
@@ -112,6 +121,13 @@ table {
 	float: left;
 	margin: 0 8px 0 0;
 }
+
+.cellCool {	background: rgba(0, 110, 187, .2); }
+.cellCute {background: rgba(239, 77, 120, .2);}
+.cellHip {background: rgba(232, 112, 0, .2);}
+.cellNatural {background: rgba(206, 153, 2, .2);}
+.cellRustic {background: rgba(107, 138, 0, .2);}
+.cellSporty {background: rgba(0, 118, 78, .2); border-right:0px;}
 
 /*==================
 villager tooltip
