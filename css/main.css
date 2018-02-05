@@ -16,6 +16,14 @@ h1, .jumbotron h3 {
 	font-family: "Bree Serif";
 }
 
+header h3{
+	width: 30%;
+	margin: 0 auto;
+	background: rgba(53, 143, 129, 1);
+	padding: 5px;
+	border-radius: 10px;
+}
+
 .jumbotron h3 {
 	color: #fff;
 }
@@ -31,7 +39,7 @@ h1, .jumbotron h3 {
 }
 
 .table-container {
-	background: #95c2ad;
+	background: rgba(53, 143, 129, .7);
 	border-radius: 40px;
 	min-width:80%;
 }
