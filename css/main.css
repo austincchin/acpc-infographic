@@ -45,6 +45,7 @@ header h3{
 	min-width:80%;
 	text-align: center;
 	padding: 20px;
+	margin-bottom: 40px;
 }
 
 #sectionTitle{
@@ -263,6 +264,15 @@ villager tooltip
   #my-content { display: block; }  
   .tableMedium { display: none !important ;}
 }
+
+@media screen and (min-width: 0px) and (max-width: 768px) {
+  .table-container { 
+  	border-radius: 0px;
+  	margin-bottom: 0px;
+   }
+
+}
+
 
 @media screen and (min-width: 490px) {
   #my-content { display: none !important; }   
