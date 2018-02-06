@@ -1,0 +1,85 @@
+<!--
+<a href="#" title="{{ v.name }}"><img ng-src="{{ v.img }}" style="width:35px;float:left;padding:2px;"></a></br></br><p style="font-size:10px;float: left;">{{ v.name }}</p>
+-->
+<head>
+	<style>
+			.cool{ background: rgba(0, 110, 187, 1); color: #fff; }
+			.cute{ background: rgba(239, 77, 120, 1); color: #fff; }
+			.natural{	background: rgba(206, 153, 2, 1); color: #fff; }
+			.rustic{ background: rgba(107, 138, 0, 1); color: #fff; }
+			.sporty{ background: rgba(0, 118, 78, 1); color: #fff; }
+			.hip{ background: rgba(232, 112, 0, 1);color: #fff; }
+
+			.cool::before {
+				content: "";
+				display: block;
+				background: url("../img/essence/coolIcon.png");
+				background-size: contain;
+				width: 8px;
+				height: 8px;
+				float: left;
+				margin: 0 3px 0 0;
+			}
+			.cute::before {
+				content: "";
+				display: block;
+				background: url("../img/essence/cuteIcon.png");
+				background-size: contain;
+				width: 8px;
+				height: 8px;
+				float: left;
+				margin: 0 3px 0 0;
+			}
+			.hip::before {
+				content: "";
+				display: block;
+				background: url("../img/essence/hipIcon.png");
+				background-size: contain;
+				width: 8px;
+				height: 8px;
+				float: left;
+				margin: 0 3px 0 0;
+			}
+			.natural::before {
+				content: "";
+				display: block;
+				background: url("../img/essence/naturalIcon.png");
+				background-size: contain;
+				width: 8px;
+				height: 8px;
+				float: left;
+				margin: 0 3px 0 0;
+			}
+			.rustic::before {
+				content: "";
+				display: block;
+				background: url("../img/essence/rusticIcon.png");
+				background-size: contain;
+				width: 8px;
+				height: 8px;
+				float: left;
+				margin: 0 3px 0 0;
+			}
+			.sporty::before {
+				content: "";
+				display: block;
+				background: url("../img/essence/sportyIcon.png");
+				background-size: contain;
+				width: 8px;
+				height: 8px;
+				float: left;
+				margin: 0 3px 0 0;
+			}
+
+			p {
+				font-size: 8px;
+			}
+
+	</style>
+</head>
+
+<div style="text-align:center;float:left;margin:5px">
+<img ng-src="{{ v.img }}" style="width:35px;">
+
+<p class="{{ v.essence }}" style="font-weight:700;padding:4px;border-radius: 5px;">{{ v.name }}</br></p>
+</div>
