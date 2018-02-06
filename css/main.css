@@ -7,6 +7,10 @@
 	--hip: #e87000;
 }
 
+::selection{
+	background-color: #24766f;
+}
+
 body {
 	font-family: "Cabin";
 	background: url("../img/ac_pattern05.png");
@@ -17,15 +21,12 @@ h1, .jumbotron h3 {
 }
 
 header h3{
-	width: 30%;
 	margin: 0 auto;
 	background: rgba(53, 143, 129, 1);
 	padding: 5px;
 	border-radius: 10px;
-}
-
-.jumbotron h3 {
 	color: #fff;
+	max-width: 500px;
 }
 
 .jumbotron {
@@ -42,12 +43,19 @@ header h3{
 	background: rgba(53, 143, 129, .7);
 	border-radius: 40px;
 	min-width:80%;
+	text-align: center;
 }
 
+#sectionTitle{
+	padding-bottom:10px;
+	color: #fff;
+	text-shadow: 3px 3px rgba(53, 143, 129, 1);
+}
 
 table {
 	background: rgba(255,255,255,.4);
 	border-radius: 10px;
+	box-shadow: 2px 2px rgba(53, 143, 129, 1);
 }
 
 .mat {
@@ -55,7 +63,11 @@ table {
 	vertical-align: middle !important;
 	font-weight: 700;
 	background-color: rgba(255,255,255,.2);
+}
 
+.matImg {
+	height: 45px;
+	margin: 5px;
 }
 
 td{
@@ -87,9 +99,12 @@ td{
 }
 
 .table-hover tbody tr:hover th {
-	background-color: rgba(255,255,255,.4);
+	background-color: rgba(255,255,255,.6);
 }
 
+.table-responsive {
+	border: 0px;
+}
 
 /* ===================================
         icons for essence row

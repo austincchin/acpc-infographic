@@ -37,8 +37,8 @@
 		<div class="main" ng-controller="MainController">
 
 			<div class="container table-container">
-				<table class="table table-hover">
-					<caption><h1>Villager Essences & Primary Resources</h2></caption>
+				<h1 id = "sectionTitle">Villager Essences & Primary Resources</h1>
+				<table class="table table-hover table-responsive">
 					<thead><tr>
 						<th style=""></th>
 						<th class="essence cool" id="cool">cool</th>
@@ -51,7 +51,7 @@
 					<tbody>
 						<tr>
 							<th class="mat">
-								<img src="img/materials/cotton.png" style="height: 40px;">
+								<img src="img/materials/cotton.png" class="matImg">
 								</br>cotton</td>
 								<td class="cellCool"><div class="villager" ng-repeat="a in coolCotton">
 								<villager v="a"></villager></div></td>
@@ -67,7 +67,7 @@
 								<villager v="a"></villager></div></td>
 						</tr><tr>
 							<th class="mat">
-								<img src="img/materials/paper.png" style="height: 40px;">
+								<img src="img/materials/paper.png" class="matImg">
 								</br>paper</td>
 								<td class="cellCool"><div class="villager" ng-repeat="a in coolPaper">
 								<villager v="a"></villager></div></td>
@@ -83,7 +83,7 @@
 								<villager v="a"></villager></div></td>
 						</tr><tr>
 							<th class="mat">
-								<img src="img/materials/preserves.png" style="height: 40px;">
+								<img src="img/materials/preserves.png" class="matImg">
 								</br>preserves</td></td>
 								<td class="cellCool"><div class="villager" ng-repeat="a in coolPreserves">
 								<villager v="a"></villager></div></td>
@@ -99,7 +99,7 @@
 								<villager v="a"></villager></div></td>
 						</tr><tr>
 							<th class="mat">
-							<img src="img/materials/steel.png" style="height: 40px;">
+							<img src="img/materials/steel.png" class="matImg">
 								</br>steel</td></td>
 								<td class="cellCool"><div class="villager" ng-repeat="a in coolSteel">
 								<villager v="a"></villager></div></td>
@@ -115,7 +115,7 @@
 								<villager v="a"></villager></div></td>
 						</tr><tr>
 							<th class="mat" style="border-bottom-left-radius:10px;">
-							<img src="img/materials/wood.png" style="height: 40px;">
+							<img src="img/materials/wood.png" class="matImg">
 								</br>wood</td></td>
 								<td class="cellCool"><div class="villager" ng-repeat="a in coolWood">
 								<villager v="a"></villager></div></td>
@@ -132,24 +132,28 @@
 						</tr></tbody>
 				</table>
 
-				<div class="container">
-					<h1 style="text-align: center;">Statistics Corner</h1>
-					<div class="container col-md-5" style="text-align:center;">
+					<h1 id="sectionTitle">Statistics Corner</h1>
+					<div class="col-md-2"></div>
+					<div class="container col-md-4" style="text-align:center; background:#ffcc00;">
 						<h4>{{ statisticsPer.cranky }} villagers are Cranky ♂</h4>
 						<h4>{{ statisticsPer.jock }} villagers are Jocks ♂</h4>
 						<h4>{{ statisticsPer.lazy }} villagers are Lazy ♂</h4>
 						<h4>{{ statisticsPer.smug }} villagers are Smug ♂</h4>
 					</div>	
-
-					<div class=" container col-md-5" style="text-align:center;">
+					
+					<div class=" container col-md-4" style="text-align:center; background:pink;">
 						<h4>{{ statisticsPer.normal }} villagers are Normal ♀</h4>
 						<h4>{{ statisticsPer.peppy }} villagers are Peppy ♀</h4>
 						<h4>{{ statisticsPer.snooty }} villagers are Snooty ♀</h4>
 						<h4>{{ statisticsPer.uchi }} villagers are Uchi ♀</h4>
 					</div>	
-
-					</div>
+					<div class="col-md-2"></div>
+				
 				</div>
+
+
+
+				
 
 			</div>
 
