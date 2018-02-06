@@ -38,7 +38,65 @@
 
 			<div class="container table-container">
 				<h1 id = "sectionTitle">Villager Essences & Primary Resources</h1>
-				<table class="table table-hover table-responsive">
+				
+				<!-- extra small listing here -->
+				<div id="my-content">
+						<div class="container xs-mat">	
+							
+							<h3 class="xs-matId xs-cotton">cotton <img src="img/materials/cotton.png" class="matImg-xs xs-Cotton"><h3>
+							<div ng-repeat="a in coolCotton"><villager v="a"></villager></div>
+							<div ng-repeat="a in cuteCotton"><villager v="a"></villager></div>
+							<div ng-repeat="a in hipCotton"><villager v="a"></villager></div>
+							<div ng-repeat="a in naturalCotton"><villager v="a"></villager></div>
+							<div ng-repeat="a in rusticCotton"><villager v="a"></villager></div>
+							<div ng-repeat="a in sportyCotton"><villager v="a"></villager></div>
+						</div>
+
+						<div class="container xs-mat">
+							<h3 class="xs-matId xs-paper">paper <img src="img/materials/paper.png" class="matImg-xs xs-Paper"><h3>
+							<div ng-repeat="a in coolPaper"><villager v="a"></villager></div>
+							<div ng-repeat="a in cutePaper"><villager v="a"></villager></div>
+							<div ng-repeat="a in hipPaper"><villager v="a"></villager></div>
+							<div ng-repeat="a in naturalPaper"><villager v="a"></villager></div>
+							<div ng-repeat="a in rusticPaper"><villager v="a"></villager></div>
+							<div ng-repeat="a in sportyPaper"><villager v="a"></villager></div>
+						</div>
+
+						<div class="container xs-mat">
+							<h3 class="xs-matId xs-preserves">preserves <img src="img/materials/preserves.png" class="matImg-xs xs-Preserves"><h3>
+							<div ng-repeat="a in coolPreserves"><villager v="a"></villager></div>
+							<div ng-repeat="a in cutePreserves"><villager v="a"></villager></div>
+							<div ng-repeat="a in hipPreserves"><villager v="a"></villager></div>
+							<div ng-repeat="a in naturalPreserves"><villager v="a"></villager></div>
+							<div ng-repeat="a in rusticPreserves"><villager v="a"></villager></div>
+							<div ng-repeat="a in sportyPreserves"><villager v="a"></villager></div>
+						</div>
+
+						<div class="container xs-mat">
+							<h3 class="xs-matId xs-steel">steel <img src="img/materials/steel.png" class="matImg-xs xs-Steel"><h3>
+							<div ng-repeat="a in coolSteel"><villager v="a"></villager></div>
+							<div ng-repeat="a in cuteSteel"><villager v="a"></villager></div>
+							<div ng-repeat="a in hipSteel"><villager v="a"></villager></div>
+							<div ng-repeat="a in naturalSteel"><villager v="a"></villager></div>
+							<div ng-repeat="a in rusticSteel"><villager v="a"></villager></div>
+							<div ng-repeat="a in sportySteel"><villager v="a"></villager></div>
+						</div>
+
+						<div class="container xs-mat">
+							<h3 class="xs-matId xs-wood">wood <img src="img/materials/wood.png" class="matImg-xs xs-Wood"><h3>
+							<div ng-repeat="a in coolWood"><villager v="a"></villager></div>
+							<div ng-repeat="a in cuteWood"><villager v="a"></villager></div>
+							<div ng-repeat="a in hipWood"><villager v="a"></villager></div>
+							<div ng-repeat="a in naturalWood"><villager v="a"></villager></div>
+							<div ng-repeat="a in rusticWood"><villager v="a"></villager></div>
+							<div ng-repeat="a in sportyWood"><villager v="a"></villager></div>
+						</div>
+
+				</div>
+				<!-- extra small listing end -->
+
+				<!-- Essence Resource Table Start-->
+				<table class="table tableMedium table-hover table-responsive">
 					<thead><tr>
 						<th style=""></th>
 						<th class="essence cool" id="cool">cool</th>
@@ -131,36 +189,12 @@
 								<villager v="a"></villager></div></td>	
 						</tr></tbody>
 				</table>
+				<h5 style="text-align:right;color:#fff;">last updated {{ lastUpdate | date }}</h5>
+				<!-- Essence Resource Table End-->
+			
 
-					<h1 id="sectionTitle">Statistics Corner</h1>
-					<div class="col-md-2"></div>
-					<div class="container col-md-4" style="text-align:center; background:#ffcc00;">
-						<h4>{{ statisticsPer.cranky }} villagers are Cranky ♂</h4>
-						<h4>{{ statisticsPer.jock }} villagers are Jocks ♂</h4>
-						<h4>{{ statisticsPer.lazy }} villagers are Lazy ♂</h4>
-						<h4>{{ statisticsPer.smug }} villagers are Smug ♂</h4>
-					</div>	
-					
-					<div class=" container col-md-4" style="text-align:center; background:pink;">
-						<h4>{{ statisticsPer.normal }} villagers are Normal ♀</h4>
-						<h4>{{ statisticsPer.peppy }} villagers are Peppy ♀</h4>
-						<h4>{{ statisticsPer.snooty }} villagers are Snooty ♀</h4>
-						<h4>{{ statisticsPer.uchi }} villagers are Uchi ♀</h4>
-					</div>	
-					<div class="col-md-2"></div>
-				
-				</div>
-
-
-
-				
-
-			</div>
-
-
-
-
-		</div>
+			</div> <!-- table-container -->
+		</div> <!-- end of main, MainController -->
 		
 		<!-- Modules -->
 		<script src="js/app.js"></script>

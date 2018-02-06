@@ -1,5 +1,7 @@
 app.controller('MainController', 
 	['$scope', function($scope) { 
+		$scope.lastUpdate = new Date('2018','01','05');
+		//month is -1
 
 		$scope.statisticsEss = {
 			hip: '6',
