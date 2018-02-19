@@ -6,14 +6,16 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<link href="https://s3.amazonaws.com/codecademy-content/projects/bootstrap.min.css" rel="stylesheet" />
 
+
 		<!-- jQuery import -->
-		<script src="http://www.google.com/jsapi" type="text/javascript"></script>
-		<script type="text/javascript">google.load("jquery", "1.3.2");</script>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 		<!-- CSS & Google Fonts Import-->
 		
 		<link href="https://fonts.googleapis.com/css?family=Bree+Serif|Cabin:400,700" rel="stylesheet"/>
 
 		<link href="css/main.css" rel="stylesheet"/>
+		<link href="css/about.css" rel="stylesheet"/>
 		<!-- Include the AngularJS library -->
 		<script src="lib/angular.min.js"></script>
 
@@ -31,6 +33,38 @@
 		<header class="jumbotron">
 			<h1 id = "title">Animal Crossing: Pocket Camp</h1>
 			<h3>live infographic</h3>
+
+			<!-- Modal Start -->
+		
+			  <!-- Trigger the modal with a button -->
+			  <button type="button" class="btn aboutBtn" data-toggle="modal" data-target="#aboutModal">About</button>
+
+			  <!-- Modal -->
+			  <div class="modal fade" id="aboutModal" role="dialog" ng-controller="AboutController">
+			    <div class="modal-dialog">
+			    
+			      <!-- Modal content-->
+			      <div class="modal-content">
+			        <div class="modal-header">
+			          <button type="button" class="close" data-dismiss="modal">&times;</button>
+			          <h4 class="modal-title">{{ aboutHeader }}</h4>
+			        </div>
+			        <div class="modal-body">
+			          <p>Since Animal Crossing: Pocket Camp's release, players have attempted to keep track of the essences and materials that villagers hand out to help them complete their goals. Infographic makers, such as reddit users <a href="https://i.imgur.com/PtIih1Y.png" target="_blank">SenorDeeebs</a> and <a href="https://i.redd.it/zozf729khh001.jpg" target="_blank">kimvoslice</a> (whose design is currently updated by GrokNotMock), have utilized visual elements in assisting players with their endeavors.</p>
+			          <p>This project automates the infographic process, using AngularJS and Python scripting to update table contents. This procedure will also extendable for future analysis of animal demographics and Nintendo updates that may include new essences and materials.</p>
+			          <p>Information and villager/material icons were compiled from the <a href="http://animalcrossing.wikia.com/wiki/Animal_Crossing_Wiki" target="_blank">Animal Crossing Wiki.</a> Essence icons and background art were hand-recreated from Animal Crossing Pocket Camp.</p>
+			        </div>
+			        <div class="modal-footer">
+			          <button type="button" class="btn btn-default btnClose" data-dismiss="modal">Close</button>
+			        </div>
+			      </div>
+			      
+			    </div>
+			  </div>
+			<!-- Modal End -->
+
+
+
 		</header>
 		
 		<div class="main" ng-controller="MainController">
@@ -42,7 +76,7 @@
 				<div id="my-content">
 
 						<div class="container xs-mat">	
-							<h3 class="xs-matId xs-cotton">cotton <img src="img/materials/cotton.png" class="matImg-xs xs-Cotton"><h3>
+							<h3 class="xs-matId">cotton <img src="img/materials/cotton.png" class="matImg-xs xs-Cotton"><h3>
 							<div ng-repeat="a in coolCotton"><villagerxs v="a"></villagerxs></div>
 							<div ng-repeat="a in cuteCotton"><villagerxs v="a"></villagerxs></div>
 							<div ng-repeat="a in hipCotton"><villagerxs v="a"></villagerxs></div>
@@ -52,7 +86,7 @@
 						</div>
 
 						<div class="container xs-mat">
-							<h3 class="xs-matId xs-paper">paper <img src="img/materials/paper.png" class="matImg-xs xs-Paper"><h3>
+							<h3 class="xs-matId">paper <img src="img/materials/paper.png" class="matImg-xs xs-Paper"><h3>
 							<div ng-repeat="a in coolPaper"><villagerxs v="a"></villagerxs></div>
 							<div ng-repeat="a in cutePaper"><villagerxs v="a"></villagerxs></div>
 							<div ng-repeat="a in hipPaper"><villagerxs v="a"></villagerxs></div>
@@ -62,7 +96,7 @@
 						</div>
 
 						<div class="container xs-mat">
-							<h3 class="xs-matId xs-preserves">preserves <img src="img/materials/preserves.png" class="matImg-xs xs-Preserves"><h3>
+							<h3 class="xs-matId">preserves <img src="img/materials/preserves.png" class="matImg-xs xs-Preserves"><h3>
 							<div ng-repeat="a in coolPreserves"><villagerxs v="a"></villagerxs></div>
 							<div ng-repeat="a in cutePreserves"><villagerxs v="a"></villagerxs></div>
 							<div ng-repeat="a in hipPreserves"><villagerxs v="a"></villagerxs></div>
@@ -72,7 +106,7 @@
 						</div>
 
 						<div class="container xs-mat">
-							<h3 class="xs-matId xs-steel">steel <img src="img/materials/steel.png" class="matImg-xs xs-Steel"><h3>
+							<h3 class="xs-matId">steel <img src="img/materials/steel.png" class="matImg-xs xs-Steel"><h3>
 							<div ng-repeat="a in coolSteel"><villagerxs v="a"></villagerxs></div>
 							<div ng-repeat="a in cuteSteel"><villagerxs v="a"></villagerxs></div>
 							<div ng-repeat="a in hipSteel"><villagerxs v="a"></villagerxs></div>
@@ -82,7 +116,7 @@
 						</div>
 
 						<div class="container xs-mat">
-							<h3 class="xs-matId xs-wood">wood <img src="img/materials/wood.png" class="matImg-xs xs-Wood"><h3>
+							<h3 class="xs-matId">wood <img src="img/materials/wood.png" class="matImg-xs xs-Wood"><h3>
 							<div ng-repeat="a in coolWood"><villagerxs v="a"></villagerxs></div>
 							<div ng-repeat="a in cuteWood"><villagerxs v="a"></villagerxs></div>
 							<div ng-repeat="a in hipWood"><villagerxs v="a"></villagerxs></div>
@@ -200,6 +234,7 @@
 
 		<!-- Controllers -->
 		<script src="js/controllers/MainController.js"></script>
+		<script src="js/controllers/AboutController.js"></script>
 		<!-- Services -->
 		<!-- Directives -->
 		<script src="js/directives/villager.js"></script>

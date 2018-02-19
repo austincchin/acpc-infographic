@@ -1,0 +1,66 @@
+.aboutBtn, .aboutBtn:focus {
+	background-color: #ea4762;
+	margin-top:20px;
+	padding: 5px 20px;
+	border-radius: 15px;
+	border: 0px solid transparent;
+	max-width: 100px;
+	box-shadow: 2px 2px #b81d37;
+	color: #fff;
+	font-weight: 700;
+}
+
+.aboutBtn:hover {
+	background-color: #ff5e79;
+	color: #fff;
+	}
+
+.aboutBtn:active {
+	box-shadow: -2px -2px #b81d37;
+	}
+
+.modal-header{
+	width: 100%;
+	background-color: #5da898;
+	border-radius: 5px 5px 0px 0px;
+}
+
+.modal-title {
+	font-family: "Bree Serif";
+	color: #fff;
+	text-shadow: 1px 1px rgba(53, 143, 129, 1);
+
+}
+
+.modal-body{
+	background-color: #f9f6e5;
+}
+
+.modal-content p{
+	font-size: 12px;
+	text-align: justify;
+}
+
+.btnClose {
+	background-color: #ea4762;
+	color: #fff;
+	font-weight: 800;
+	border: none;
+	border-radius: 15px;
+	box-shadow: 2px 2px #b81d37;
+	
+}
+
+.btnClose:hover {
+	background-color: #ff5e79;
+	color: #fff;
+}
+
+.btnClose:active {
+	box-shadow: -2px -2px #b81d37;
+}
+
+.modal-footer {
+	background: url('../img/ac_pattern05.png');
+}
+
