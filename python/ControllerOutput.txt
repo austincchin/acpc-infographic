@@ -24,6 +24,14 @@ $scope.coolPaper = [
 		material: 'paper',
 		essence: 'cool',
 		img: 'img/villager/Apollo.png'
+	},
+	{
+		name: 'Eugene',
+		personality: 'Smug',
+		species: 'Koala',
+		material: 'paper',
+		essence: 'cool',
+		img: 'img/villager/Eugene.png'
 	}
 ];
 $scope.coolPreserves = [
@@ -44,6 +52,22 @@ $scope.coolSteel = [
 		material: 'steel',
 		essence: 'cool',
 		img: 'img/villager/Cherry.png'
+	},
+	{
+		name: 'Freya',
+		personality: 'Snooty',
+		species: 'Wolf',
+		material: 'steel',
+		essence: 'cool',
+		img: 'img/villager/Freya.png'
+	},
+	{
+		name: 'Fuchsia',
+		personality: 'Uchi',
+		species: 'Deer',
+		material: 'steel',
+		essence: 'cool',
+		img: 'img/villager/Fuchsia.png'
 	},
 	{
 		name: 'Kyle',
@@ -218,6 +242,14 @@ $scope.hipPaper = [
 		img: 'img/villager/Merengue.png'
 	},
 	{
+		name: 'Octavian',
+		personality: 'Cranky',
+		species: 'Octopus',
+		material: 'paper',
+		essence: 'hip',
+		img: 'img/villager/Octavian.png'
+	},
+	{
 		name: 'Pietro',
 		personality: 'Smug',
 		species: 'Sheep',
@@ -248,20 +280,20 @@ $scope.hipSteel = [
 ];
 $scope.hipWood = [
 	{
-		name: 'Francine',
-		personality: 'Snooty',
-		species: 'Rabbit',
-		material: 'wood',
-		essence: 'hip',
-		img: 'img/villager/Francine.png'
-	},
-	{
 		name: 'Bob',
 		personality: 'Lazy',
 		species: 'Cat',
 		material: 'wood',
 		essence: 'hip',
 		img: 'img/villager/Bob.png'
+	},
+	{
+		name: 'Francine',
+		personality: 'Snooty',
+		species: 'Rabbit',
+		material: 'wood',
+		essence: 'hip',
+		img: 'img/villager/Francine.png'
 	}
 ];
 $scope.naturalCotton = [
@@ -326,6 +358,22 @@ $scope.naturalWood = [
 		img: 'img/villager/Alfonso.png'
 	},
 	{
+		name: 'Boots',
+		personality: 'Jock',
+		species: 'Alligator',
+		material: 'wood',
+		essence: 'natural',
+		img: 'img/villager/Boots.png'
+	},
+	{
+		name: 'Dotty',
+		personality: 'Peppy',
+		species: 'Rabbit',
+		material: 'wood',
+		essence: 'natural',
+		img: 'img/villager/Dotty.png'
+	},
+	{
 		name: 'Filbert',
 		personality: 'Lazy',
 		species: 'Squirrel',
@@ -348,14 +396,6 @@ $scope.naturalWood = [
 		material: 'wood',
 		essence: 'natural',
 		img: 'img/villager/Punchy.png'
-	},
-	{
-		name: 'Boots',
-		personality: 'Jock',
-		species: 'Alligator',
-		material: 'wood',
-		essence: 'natural',
-		img: 'img/villager/Boots.png'
 	}
 ];
 $scope.rusticPaper = [
@@ -396,6 +436,14 @@ $scope.rusticSteel = [
 ];
 $scope.rusticWood = [
 	{
+		name: 'Ava',
+		personality: 'Normal',
+		species: 'Chicken',
+		material: 'wood',
+		essence: 'rustic',
+		img: 'img/villager/Ava.png'
+	},
+	{
 		name: 'Goose',
 		personality: 'Jock',
 		species: 'Chicken',
@@ -418,14 +466,6 @@ $scope.rusticWood = [
 		material: 'wood',
 		essence: 'rustic',
 		img: 'img/villager/Mitzi.png'
-	},
-	{
-		name: 'Ava',
-		personality: 'Normal',
-		species: 'Chicken',
-		material: 'wood',
-		essence: 'rustic',
-		img: 'img/villager/Ava.png'
 	}
 ];
 $scope.sportyCotton = [

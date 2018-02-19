@@ -1,6 +1,6 @@
 app.controller('MainController', 
 	['$scope', function($scope) { 
-		$scope.lastUpdate = new Date('2018','01','05');
+		$scope.lastUpdate = new Date('2018','01','19');
 		//month is -1
 
 		$scope.statisticsEss = {
@@ -21,33 +21,33 @@ app.controller('MainController',
 		};
 
 		$scope.statisticsPer = {
-			lazy: '11',
-			normal: '12',
-			snooty: '3',
-			peppy: '10',
-			cranky: '7',
-			smug: '4',
-			uchi: '4',
-			jock: '10'
+			Lazy: '11',
+			Normal: '12',
+			Snooty: '3',
+			Peppy: '10',
+			Cranky: '7',
+			Smug: '4',
+			Uchi: '4',
+			Jock: '10'
 		};
 
 		$scope.coolCotton = [
-		{
-			name: 'Agnes',
-			personality: 'Uchi',
-			species: 'Pig',
-			material: 'cotton',
-			essence: 'cool',
-			img: 'img/villager/Agnes.png'
-		},
-		{
-			name: 'Tex',
-			personality: 'Smug',
-			species: 'Penguin',
-			material: 'cotton',
-			essence: 'cool',
-			img: 'img/villager/Tex.png'
-		}
+			{
+				name: 'Agnes',
+				personality: 'Uchi',
+				species: 'Pig',
+				material: 'cotton',
+				essence: 'cool',
+				img: 'img/villager/Agnes.png'
+			},
+			{
+				name: 'Tex',
+				personality: 'Smug',
+				species: 'Penguin',
+				material: 'cotton',
+				essence: 'cool',
+				img: 'img/villager/Tex.png'
+			}
 		];
 		$scope.coolPaper = [
 			{
@@ -57,6 +57,14 @@ app.controller('MainController',
 				material: 'paper',
 				essence: 'cool',
 				img: 'img/villager/Apollo.png'
+			},
+			{
+				name: 'Eugene',
+				personality: 'Smug',
+				species: 'Koala',
+				material: 'paper',
+				essence: 'cool',
+				img: 'img/villager/Eugene.png'
 			}
 		];
 		$scope.coolPreserves = [
@@ -77,6 +85,22 @@ app.controller('MainController',
 				material: 'steel',
 				essence: 'cool',
 				img: 'img/villager/Cherry.png'
+			},
+			{
+				name: 'Freya',
+				personality: 'Snooty',
+				species: 'Wolf',
+				material: 'steel',
+				essence: 'cool',
+				img: 'img/villager/Freya.png'
+			},
+			{
+				name: 'Fuchsia',
+				personality: 'Uchi',
+				species: 'Deer',
+				material: 'steel',
+				essence: 'cool',
+				img: 'img/villager/Fuchsia.png'
 			},
 			{
 				name: 'Kyle',
@@ -251,6 +275,14 @@ app.controller('MainController',
 				img: 'img/villager/Merengue.png'
 			},
 			{
+				name: 'Octavian',
+				personality: 'Cranky',
+				species: 'Octopus',
+				material: 'paper',
+				essence: 'hip',
+				img: 'img/villager/Octavian.png'
+			},
+			{
 				name: 'Pietro',
 				personality: 'Smug',
 				species: 'Sheep',
@@ -281,20 +313,20 @@ app.controller('MainController',
 		];
 		$scope.hipWood = [
 			{
-				name: 'Francine',
-				personality: 'Snooty',
-				species: 'Rabbit',
-				material: 'wood',
-				essence: 'hip',
-				img: 'img/villager/Francine.png'
-			},
-			{
 				name: 'Bob',
 				personality: 'Lazy',
 				species: 'Cat',
 				material: 'wood',
 				essence: 'hip',
 				img: 'img/villager/Bob.png'
+			},
+			{
+				name: 'Francine',
+				personality: 'Snooty',
+				species: 'Rabbit',
+				material: 'wood',
+				essence: 'hip',
+				img: 'img/villager/Francine.png'
 			}
 		];
 		$scope.naturalCotton = [
@@ -359,6 +391,22 @@ app.controller('MainController',
 				img: 'img/villager/Alfonso.png'
 			},
 			{
+				name: 'Boots',
+				personality: 'Jock',
+				species: 'Alligator',
+				material: 'wood',
+				essence: 'natural',
+				img: 'img/villager/Boots.png'
+			},
+			{
+				name: 'Dotty',
+				personality: 'Peppy',
+				species: 'Rabbit',
+				material: 'wood',
+				essence: 'natural',
+				img: 'img/villager/Dotty.png'
+			},
+			{
 				name: 'Filbert',
 				personality: 'Lazy',
 				species: 'Squirrel',
@@ -381,14 +429,6 @@ app.controller('MainController',
 				material: 'wood',
 				essence: 'natural',
 				img: 'img/villager/Punchy.png'
-			},
-			{
-				name: 'Boots',
-				personality: 'Jock',
-				species: 'Alligator',
-				material: 'wood',
-				essence: 'natural',
-				img: 'img/villager/Boots.png'
 			}
 		];
 		$scope.rusticPaper = [
@@ -429,6 +469,14 @@ app.controller('MainController',
 		];
 		$scope.rusticWood = [
 			{
+				name: 'Ava',
+				personality: 'Normal',
+				species: 'Chicken',
+				material: 'wood',
+				essence: 'rustic',
+				img: 'img/villager/Ava.png'
+			},
+			{
 				name: 'Goose',
 				personality: 'Jock',
 				species: 'Chicken',
@@ -451,14 +499,6 @@ app.controller('MainController',
 				material: 'wood',
 				essence: 'rustic',
 				img: 'img/villager/Mitzi.png'
-			},
-			{
-				name: 'Ava',
-				personality: 'Normal',
-				species: 'Chicken',
-				material: 'wood',
-				essence: 'rustic',
-				img: 'img/villager/Ava.png'
 			}
 		];
 		$scope.sportyCotton = [
@@ -567,5 +607,6 @@ app.controller('MainController',
 				img: 'img/villager/Tad.png'
 			}
 		];
+
 	 
 }]);
